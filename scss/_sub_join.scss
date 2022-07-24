@@ -1,0 +1,153 @@
+.join {
+  background: #f8f9f8;
+  padding: 80px 0;
+  overflow: hidden;
+
+  .col2:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 80px;
+    float: right;
+    // background: #fff;
+    // border-radius: 24px;
+    // box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 4px 18px rgba(0, 0, 0, 0.05);
+
+    .join-sns {
+      width: 100%;
+      padding: 30px 0;
+      margin-bottom: 40px;
+      // background-color: $grey-bg;
+      // border-radius: 8px;
+
+      > h2 {
+        text-transform: capitalize;
+        text-align: center;
+        @include font(15px, 1);
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+
+        li {
+          a {
+            display: block;
+            width: 64px;
+            height: 64px;
+
+            img {
+              @include object-fit;
+            }
+          }
+        }
+      }
+    }
+
+    .join-form {
+      > h2 {
+        text-transform: capitalize;
+        text-align: center;
+        @include font(15px, 1);
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      form fieldset:nth-of-type(1) {
+        .form-input {
+          position: relative;
+          margin: 0 auto 20px;
+
+          label {
+            @include center-y;
+            @include font(14px);
+            position: absolute;
+            left: 8px;
+            color: #6d6b7d;
+          }
+
+          input {
+            &[type='text'],
+            &[type='tel'],
+            &[type='password'] {
+              width: 100%;
+              border: 1px solid $grey-line;
+              border-radius: 6px;
+              padding: 14px 8px;
+            }
+          }
+
+          &:focus-within {
+            label {
+              @include font(12px);
+              top: 0;
+              background: #fff;
+              padding: 0 4px;
+              color: #000;
+            }
+
+            input:focus {
+              border: 1.5px solid #000;
+            }
+          }
+        }
+      }
+
+      .form-input.checkbox {
+        &::after {
+          @include clear-both;
+        }
+
+        label {
+          float: left;
+          margin-right: 20px;
+          line-height: 20px;
+          position: static;
+          margin-bottom: 10px;
+        }
+
+        input {
+          &[type='checkbox'] {
+            border: 1px solid $grey-line;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            vertical-align: bottom;
+            position: relative;
+            transition: 0.2s;
+
+            &::after {
+              display: block;
+              position: absolute;
+              top: 4px;
+              left: 3px;
+              border: 2px solid #fff;
+              border-top: 0;
+              border-right: 0;
+              transform: rotate(-45deg);
+              width: 9px;
+              height: 5px;
+            }
+
+            &:checked {
+              background-color: #000;
+              border-color: #000;
+
+              &::after {
+                content: '';
+                width: 9px;
+                height: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

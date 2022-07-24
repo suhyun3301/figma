@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma | Join</title>
+    <script
+      src="https://kit.fontawesome.com/6cbfea5146.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="figma logo" />
+          </a>
+        </h1>
+
+        <nav class="menu-pc">
+          <ul class="list">
+            <li class="item"><a href="careers.html">careers</a></li>
+            <li class="item"><a href="youtube.html">youtube</a></li>
+            <li class="item"><a href="community.html">community</a></li>
+            <li class="item"><a href="gallery.html">gallery</a></li>
+            <li class="item"><a href="contact.html">contact</a></li>
+            <li class="item"><a href="join.html">join</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn-call">
+          <span>메뉴호출</span>
+        </a>
+      </div>
+
+      <nav class="menu-mo">
+        <div class="inner">
+          <ul class="list">
+            <li class="item"><a href="careers.html">careers</a></li>
+            <li class="item"><a href="youtube.html">youtube</a></li>
+            <li class="item"><a href="community.html">community</a></li>
+            <li class="item"><a href="gallery.html">gallery</a></li>
+            <li class="item"><a href="contact.html">contact</a></li>
+            <li class="item"><a href="join.html">join</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="content join">
+      <h1 class="hidden">회원가입하기</h1>
+      <div class="inner">
+        <article class="col2">
+          <div class="join-sns">
+            <h2>social join</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="img/sns/bnt_sns_naver.png"
+                    alt="네이버로 가입하기"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="img/sns/bnt_sns_kakao.png"
+                    alt="카카오로 가입하기"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="img/sns/bnt_sns_facebook.png"
+                    alt="페이스북으로 가입하기"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/sns/bnt_sns_google.png" alt="구글로 가입하기" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="join-form">
+            <h2>figma join</h2>
+            <form action="result.html" method="get">
+              <fieldset>
+                <legend class="hidden">필수 회원 가입 폼 양식</legend>
+                <div class="form-input">
+                  <label for="userID">아이디</label>
+                  <input type="text" name="userID" id="userID" required />
+                </div>
+                <div class="form-input">
+                  <label for="email">이메일</label>
+                  <input type="text" name="email" id="email" required />
+                </div>
+                <div class="form-input">
+                  <label for="phone">휴대폰 번호</label>
+                  <input type="tel" name="phone" id="phone" required />
+                </div>
+                <div class="form-input">
+                  <label for="password">비밀번호</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                  />
+                </div>
+                <div class="form-input">
+                  <label for="password2">비밀번호 확인</label>
+                  <input
+                    type="password"
+                    name="password2"
+                    id="password2"
+                    required
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend class="hidden">부가 정보</legend>
+                <div class="form-input checkbox">
+                  <label for="figmaTip">
+                    <input
+                      type="checkbox"
+                      name="interests"
+                      id="figmaTip"
+                      value="figmaTip"
+                    />
+                    Figma tip
+                  </label>
+                  <label for="designSystem">
+                    <input
+                      type="checkbox"
+                      name="interests"
+                      id="designSystem"
+                      value="designSystem"
+                    />
+                    Design system
+                  </label>
+                  <label for="prototyping">
+                    <input
+                      type="checkbox"
+                      name="interests"
+                      id="prototyping"
+                      value="prototyping"
+                    />
+                    Prototyping
+                  </label>
+                  <label for="designProcesses">
+                    <input
+                      type="checkbox"
+                      name="interests"
+                      id="designProcesses"
+                      value="designProcesses"
+                    />
+                    Design processes
+                  </label>
+                </div>
+
+                <div class="form-input birth-day">
+                  <label>생년월일</label>
+                  <input
+                    type="tel"
+                    name="birthYear"
+                    id="birthYear"
+                    size="4"
+                    maxlength="4"
+                    placeholder="YYYY"
+                  />
+                  <select name="brithMonth">
+                    <option>MM</option>
+                    <option value="01">1월</option>
+                  </select>
+                  <select name="brithDay">
+                    <option>DD</option>
+                    <option value="01">1일</option>
+                  </select>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </article>
+
+        <article class="col2">
+          <p class="page-title">Join</p>
+          <strong>Get started absolutely free.</strong>
+          <div class="pic-outside">
+            <div class="inside"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="inner">
+        <div class="wrap">
+          <div class="footer-logo">
+            <a class="logo" href="index.html">
+              <img src="img/logo.svg" alt="logo" />
+            </a>
+            <p>
+              Figma connects everyone in the design process so teams can deliver
+              better products, faster.
+            </p>
+            <strong> Try Figma for free </strong>
+          </div>
+
+          <nav class="footer-nav">
+            <div class="menu">
+              <h3 class="title">Use Cases</h3>
+              <ul class="list">
+                <li class="item"><a href="careers.html">careers</a></li>
+                <li class="item"><a href="youtube.html">youtube</a></li>
+                <li class="item"><a href="community.html">community</a></li>
+                <li class="item"><a href="gallery.html">gallery</a></li>
+                <li class="item"><a href="contact.html">contact</a></li>
+                <li class="item"><a href="join.html">join</a></li>
+              </ul>
+            </div>
+
+            <div class="menu">
+              <h3 class="title">Compare</h3>
+              <ul class="list">
+                <li class="item"><a href="#">Sketch</a></li>
+                <li class="item"><a href="#">Adobe XD</a></li>
+                <li class="item"><a href="#">Invision Studio</a></li>
+                <li class="item"><a href="#">Framer</a></li>
+                <li class="item"><a href="#">Design on Windows</a></li>
+                <li class="item"><a href="#">Miro</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="wrap">
+          <span class="copyright">© figma. All Rights Reserved</span>
+
+          <ul class="sns">
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

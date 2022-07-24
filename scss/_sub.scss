@@ -1,0 +1,108 @@
+.content {
+  .page-title {
+    @include font(120px, 300px);
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .pagination {
+    @include center-x;
+    position: absolute;
+
+    &::after {
+      @include clear-both;
+    }
+
+    li {
+      float: left;
+      margin-right: 10px;
+      text-align: center;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover,
+      &.on {
+        a {
+          background: #000;
+          border-radius: 20px;
+          color: #fff;
+        }
+      }
+
+      a {
+        display: block;
+        @include font(20px);
+        color: #000;
+        padding: 0 6px;
+        min-width: 32px;
+        line-height: 32px;
+      }
+
+      &.prev,
+      &.next {
+        &:hover a {
+          background: none;
+          opacity: 1;
+          color: #000;
+          border-radius: 0;
+        }
+
+        a {
+          font-size: 40px;
+          opacity: 0.1;
+          padding: 0;
+        }
+      }
+
+      &.prev {
+        transform: rotate(180deg);
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .content {
+    .page-title {
+      font-size: 14vw;
+    }
+
+    .pagination {
+      //1(prev), 12(next)
+      @for $i from 7 through 11 {
+        li:nth-child(#{$i}) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .content {
+    .pagination {
+      position: static;
+      left: auto;
+      transform: translateX(0);
+
+      //1(prev), 12(next), tablet(7-11)
+      @for $i from 2 through 6 {
+        li:nth-child(#{$i}) {
+          display: none;
+        }
+      }
+
+      .prev {
+        float: left;
+      }
+
+      .next {
+        float: right;
+      }
+    }
+  }
+}

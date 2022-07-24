@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard.css');
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/mixin';
+@import 'base/latyout';
+
+@import 'header';
+@import 'footer';
+@import 'sub/sub_header';
+@import 'sub/sub_footer';
+
+@import 'sub';
+@import 'sub_community';
+@import 'sub_join';
+
+#visual {
+  width: 100%;
+  height: 800px;
+  background-color: #a259ff;
+}
