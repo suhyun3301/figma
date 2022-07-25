@@ -11,6 +11,7 @@
     ></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" defer></script>
+    <script src="js/form_validation.js" defer></script>
   </head>
   <body>
     <header id="header">
@@ -55,8 +56,162 @@
       <h1 class="hidden">회원가입하기</h1>
       <div class="inner">
         <article class="col2">
+          <div class="join-form">
+            <h2>Nice meet to you</h2>
+            <form action="result.html" method="get">
+              <fieldset>
+                <legend class="hidden">필수 회원 가입 폼 양식</legend>
+                <div class="form-div">
+                  <input type="text" name="email" id="email" placeholder=" " />
+                  <label for="email">이메일 (아이디)</label>
+                </div>
+                <div class="form-div">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder=" "
+                  />
+                  <label for="password">비밀번호</label>
+                </div>
+                <div class="form-div">
+                  <input
+                    type="password"
+                    name="password2"
+                    id="password2"
+                    placeholder=" "
+                  />
+                  <label for="password2">비밀번호 확인</label>
+                </div>
+                <!-- <div class="form-div">
+                  <input
+                    type="text"
+                    name="userName"
+                    id="userID"
+                    placeholder=" "
+                  />
+                  <label for="userName">이름</label>
+                </div> -->
+                <div class="form-div">
+                  <input type="tel" name="phone" id="phone" placeholder=" " />
+                  <label for="phone">휴대폰 번호</label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend class="hidden">부가 정보</legend>
+                <h3 class="label-title">관심항목 선택</h3>
+                <div class="form-div checkbox">
+                  <label for="figmaTip">
+                    <input
+                      type="checkbox"
+                      name="interests"
+                      id="figmaTip"
+                      value="figmaTip"
+                    />
+                    Figma tip
+                  </label>
+                  <label for="designSystem">
+                    <input
+                      type="checkbox"
+                      name="interests"
+                      id="designSystem"
+                      value="designSystem"
+                    />
+                    Design system
+                  </label>
+                  <label for="prototyping">
+                    <input
+                      type="checkbox"
+                      name="interests"
+                      id="prototyping"
+                      value="prototyping"
+                    />
+                    Prototyping
+                  </label>
+                  <!-- <label for="designProcesses">
+                    <input
+                      type="checkbox"
+                      name="interests"
+                      id="designProcesses"
+                      value="designProcesses"
+                    />
+                    Design processes
+                  </label> -->
+                </div>
+
+                <div class="form-div birth-day">
+                  <label class="label-title">생년월일</label>
+                  <div class="inner">
+                    <input
+                      type="tel"
+                      name="birthYear"
+                      id="birthYear"
+                      size="4"
+                      maxlength="4"
+                      placeholder="YYYY"
+                    />
+                    <select name="birthMonth">
+                      <option>MM</option>
+                      <option value="01">1월</option>
+                    </select>
+                    <select name="birthDay">
+                      <option>DD</option>
+                      <option value="01">1일</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend class="hidden">서비스 정책 동의</legend>
+                <h3 class="label-title">이용약관 동의</h3>
+                <div class="form-div checkbox">
+                  <label for="agree_all">
+                    <input
+                      type="checkbox"
+                      name="agree_all"
+                      id="agree_all"
+                      value="no"
+                    />
+                    전체 동의
+                  </label>
+                  <label for="private">
+                    <input
+                      type="checkbox"
+                      name="private"
+                      id="private"
+                      value="no"
+                    />
+                    [필수] 개인정보 수집·이용 동의
+                  </label>
+                  <label for="check_age">
+                    <input
+                      type="checkbox"
+                      name="check_age"
+                      id="check_age"
+                      value="no"
+                    />
+                    [필수] 본인은 만 14세 이상입니다.
+                  </label>
+                  <label for="marketing">
+                    <input
+                      type="checkbox"
+                      name="marketing"
+                      id="marketing"
+                      value="no"
+                    />
+                    [선택] 마케팅 수신 동의
+                  </label>
+                </div>
+              </fieldset>
+
+              <input type="submit" value="Create account" />
+            </form>
+          </div>
+
           <div class="join-sns">
-            <h2>social join</h2>
+            <h2>OR</h2>
             <ul>
               <li>
                 <a href="#">
@@ -89,115 +244,17 @@
               </li>
             </ul>
           </div>
-
-          <div class="join-form">
-            <h2>figma join</h2>
-            <form action="result.html" method="get">
-              <fieldset>
-                <legend class="hidden">필수 회원 가입 폼 양식</legend>
-                <div class="form-input">
-                  <label for="userID">아이디</label>
-                  <input type="text" name="userID" id="userID" required />
-                </div>
-                <div class="form-input">
-                  <label for="email">이메일</label>
-                  <input type="text" name="email" id="email" required />
-                </div>
-                <div class="form-input">
-                  <label for="phone">휴대폰 번호</label>
-                  <input type="tel" name="phone" id="phone" required />
-                </div>
-                <div class="form-input">
-                  <label for="password">비밀번호</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    required
-                  />
-                </div>
-                <div class="form-input">
-                  <label for="password2">비밀번호 확인</label>
-                  <input
-                    type="password"
-                    name="password2"
-                    id="password2"
-                    required
-                  />
-                </div>
-              </fieldset>
-
-              <fieldset>
-                <legend class="hidden">부가 정보</legend>
-                <div class="form-input checkbox">
-                  <label for="figmaTip">
-                    <input
-                      type="checkbox"
-                      name="interests"
-                      id="figmaTip"
-                      value="figmaTip"
-                    />
-                    Figma tip
-                  </label>
-                  <label for="designSystem">
-                    <input
-                      type="checkbox"
-                      name="interests"
-                      id="designSystem"
-                      value="designSystem"
-                    />
-                    Design system
-                  </label>
-                  <label for="prototyping">
-                    <input
-                      type="checkbox"
-                      name="interests"
-                      id="prototyping"
-                      value="prototyping"
-                    />
-                    Prototyping
-                  </label>
-                  <label for="designProcesses">
-                    <input
-                      type="checkbox"
-                      name="interests"
-                      id="designProcesses"
-                      value="designProcesses"
-                    />
-                    Design processes
-                  </label>
-                </div>
-
-                <div class="form-input birth-day">
-                  <label>생년월일</label>
-                  <input
-                    type="tel"
-                    name="birthYear"
-                    id="birthYear"
-                    size="4"
-                    maxlength="4"
-                    placeholder="YYYY"
-                  />
-                  <select name="brithMonth">
-                    <option>MM</option>
-                    <option value="01">1월</option>
-                  </select>
-                  <select name="brithDay">
-                    <option>DD</option>
-                    <option value="01">1일</option>
-                  </select>
-                </div>
-              </fieldset>
-            </form>
-          </div>
         </article>
 
         <article class="col2">
-          <p class="page-title">Join</p>
-          <strong>Get started absolutely free.</strong>
-          <div class="pic-outside">
-            <div class="inside"></div>
+          <div class="pic">
+            <img src="img/join.png" alt="가입 이미지" />
           </div>
+          <div class="txt">
+            <p class="title">Join</p>
+            <strong>Get started absolutely free.</strong>
+          </div>
+          <img class="moving-img" src="img/join2.png" alt="" />
         </article>
       </div>
     </section>

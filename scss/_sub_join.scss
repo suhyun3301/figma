@@ -1,6 +1,6 @@
 .join {
-  background: #f8f9f8;
-  padding: 80px 0;
+  background-color: #0da959;
+  padding: 120px 0;
   overflow: hidden;
 
   .col2:first-child {
@@ -8,119 +8,47 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // width: 500px;
+    background: #fff;
 
-    padding: 40px 80px;
+    position: relative;
+    top: -50px;
+
+    padding: 50px 32px 60px;
     float: right;
-    // background: #fff;
-    // border-radius: 24px;
-    // box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 4px 18px rgba(0, 0, 0, 0.05);
-
-    .join-sns {
-      width: 100%;
-      padding: 30px 0;
-      margin-bottom: 40px;
-      // background-color: $grey-bg;
-      // border-radius: 8px;
-
-      > h2 {
-        text-transform: capitalize;
-        text-align: center;
-        @include font(15px, 1);
-        font-weight: 600;
-        margin-bottom: 20px;
-      }
-
-      ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 40px;
-
-        li {
-          a {
-            display: block;
-            width: 64px;
-            height: 64px;
-
-            img {
-              @include object-fit;
-            }
-          }
-        }
-      }
-    }
+    border-radius: 24px;
+    margin-right: 0px;
 
     .join-form {
+      margin-bottom: 50px;
+
       > h2 {
-        text-transform: capitalize;
-        text-align: center;
-        @include font(15px, 1);
+        @include font(24px, 1);
         font-weight: 600;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        text-align: center;
       }
 
-      form fieldset:nth-of-type(1) {
-        .form-input {
-          position: relative;
-          margin: 0 auto 20px;
-
-          label {
-            @include center-y;
-            @include font(14px);
-            position: absolute;
-            left: 8px;
-            color: #6d6b7d;
-          }
-
-          input {
-            &[type='text'],
-            &[type='tel'],
-            &[type='password'] {
-              width: 100%;
-              border: 1px solid $grey-line;
-              border-radius: 6px;
-              padding: 14px 8px;
-            }
-          }
-
-          &:focus-within {
-            label {
-              @include font(12px);
-              top: 0;
-              background: #fff;
-              padding: 0 4px;
-              color: #000;
-            }
-
-            input:focus {
-              border: 1.5px solid #000;
-            }
-          }
-        }
-      }
-
-      .form-input.checkbox {
-        &::after {
-          @include clear-both;
-        }
-
+      .form-div.checkbox {
         label {
-          float: left;
           margin-right: 20px;
           line-height: 20px;
-          position: static;
-          margin-bottom: 10px;
+
+          &:last-child {
+            margin-right: 0;
+          }
         }
 
         input {
           &[type='checkbox'] {
-            border: 1px solid $grey-line;
+            border: 1px solid black;
             width: 20px;
             height: 20px;
             border-radius: 4px;
             vertical-align: bottom;
             position: relative;
             transition: 0.2s;
+            background-color: #fff;
 
             &::after {
               display: block;
@@ -146,6 +74,415 @@
               }
             }
           }
+        }
+      }
+
+      .label-title {
+        display: block;
+        margin-bottom: 12px;
+        font-size: 14px;
+        font-weight: 600;
+        opacity: 0.5;
+      }
+
+      form fieldset:nth-of-type(1) {
+        margin-bottom: 20px;
+
+        .form-div {
+          position: relative;
+          margin: 0 auto 24px;
+
+          label {
+            @include center-y;
+            @include font(14px);
+            position: absolute;
+            left: 8px;
+            color: #6d6b7d;
+            transition: 0.2s;
+          }
+
+          input {
+            &[type='text'],
+            &[type='tel'],
+            &[type='password'] {
+              width: 100%;
+              border: 1px solid #000;
+              border-radius: 6px;
+              padding: 14px 8px;
+            }
+
+            &:focus {
+              border: 1.5px solid #000;
+
+              & + label {
+                @include font(12px, 1.4);
+                top: -2px;
+                background: #000;
+                padding: 2px 6px;
+                color: #fff;
+                border-radius: 2px;
+              }
+            }
+
+            &:not(:placeholder-shown) {
+              &:not(:focus) {
+                border: 1.5px solid #000;
+              }
+
+              &:not(:focus) + label {
+                @include font(12px, 1.4);
+                top: 0;
+                padding: 0 4px;
+                background-color: #ffc702;
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+
+      form fieldset:nth-of-type(2) {
+        margin-bottom: 40px;
+
+        .checkbox {
+          margin-bottom: 24px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .birth-day {
+          .inner {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+
+            input[type='tel'],
+            select {
+              width: calc(100% / 3);
+              border: 1px solid #000;
+              border-radius: 6px;
+              padding: 14px 8px;
+              margin-right: 10px;
+            }
+
+            select[name='birthDay'] {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      form fieldset:nth-of-type(3) {
+        margin-bottom: 40px;
+
+        .form-div.checkbox label {
+          float: none;
+          display: block;
+          font-size: 14px;
+          margin-bottom: 12px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      input[type='submit'] {
+        width: 100%;
+        height: 64px;
+        border: none;
+        background-color: #000;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+
+    .join-sns {
+      width: 100%;
+
+      > h2 {
+        text-transform: capitalize;
+        text-align: center;
+        @include font(15px, 1);
+        font-weight: 600;
+        margin-bottom: 20px;
+        position: relative;
+        color: #000;
+
+        &::before,
+        &::after {
+          content: '';
+          display: block;
+          width: 45%;
+          height: 1px;
+          position: absolute;
+          @include center-y;
+          background-color: #000;
+        }
+
+        &::before {
+          right: 0;
+        }
+
+        &::after {
+          left: 0;
+        }
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+
+        li {
+          cursor: pointer;
+
+          a {
+            display: block;
+            width: 64px;
+            height: 64px;
+
+            img {
+              @include object-fit;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .col2:last-child {
+    float: left;
+    width: 640px;
+    position: relative;
+
+    .txt {
+      p {
+        @include font(100px, 128px);
+        font-weight: 800;
+        background-color: #f24e1e;
+        border: 4px solid #000;
+        margin: 20px 0;
+        text-align: center;
+        width: 280px;
+      }
+
+      strong {
+        display: inline-block;
+        background-color: #ffc702;
+        border: 4px solid #000;
+        padding: 10px 20px;
+        margin-left: 140px;
+        font-weight: 600;
+      }
+    }
+
+    .pic {
+      width: 100%;
+
+      img {
+        @include object-fit;
+      }
+    }
+
+    .moving-img {
+      position: absolute;
+      width: 100px;
+      top: 300px;
+      right: 200px;
+      filter: drop-shadow(11px 13px 0px rgba(0, 0, 0, 0.7));
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .join {
+    padding: 80px 0;
+    overflow: hidden;
+
+    .inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .col2 {
+        width: 100%;
+      }
+    }
+
+    .col2:first-child {
+      order: 2;
+      padding: 80px;
+      float: none;
+
+      .join-form {
+        width: 100%;
+        margin-bottom: 60px;
+
+        > h2 {
+          font-weight: 800;
+          font-size: 40px;
+        }
+
+        .label-title {
+          margin-bottom: 20px;
+        }
+
+        .form-input.checkbox {
+          label {
+            margin-right: 30px;
+            line-height: 24px;
+            margin-bottom: 24px;
+          }
+
+          input {
+            &[type='checkbox'] {
+              width: 24px;
+              height: 24px;
+              border-radius: 6px;
+              margin-right: 4px;
+
+              &::after {
+                top: 4px;
+                left: 3px;
+              }
+
+              &:checked {
+                &::after {
+                  width: 13px;
+                  height: 6px;
+                }
+              }
+            }
+          }
+        }
+
+        form fieldset:nth-of-type(1) {
+          .form-div {
+            input {
+              &[type='text'],
+              &[type='tel'],
+              &[type='password'] {
+                border-radius: 8px;
+                padding: 20px 16px;
+              }
+            }
+          }
+        }
+
+        form fieldset:nth-of-type(2) {
+          .checkbox {
+            margin-bottom: 20px;
+          }
+
+          .birth-day {
+            .inner {
+              padding: 0;
+
+              input[type='tel'],
+              select {
+                margin-right: 16px;
+              }
+            }
+          }
+        }
+
+        form fieldset:nth-of-type(3) {
+          margin-bottom: 60px;
+
+          .form-input.checkbox label {
+            font-size: 15px;
+          }
+        }
+
+        input[type='submit'] {
+          height: 72px;
+        }
+      }
+
+      .join-sns ul {
+        padding: 0;
+        justify-content: space-around;
+      }
+    }
+
+    .col2:last-child {
+      order: 1;
+      display: flex;
+      align-items: center;
+      margin-bottom: 100px;
+
+      .pic {
+        width: 80%;
+        margin: 0 auto;
+        transform: translateX(33px);
+      }
+
+      .txt {
+        display: none;
+      }
+
+      .moving-img {
+        width: 80px;
+        bottom: -31px;
+        right: 44px;
+        top: auto;
+        filter: drop-shadow(10px 8px 0px rgba(0, 0, 0, 0.7));
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .join {
+    .inner {
+      padding: 0 20px;
+    }
+    .col2:first-child {
+      width: 100%;
+      padding: 0;
+      background-color: transparent;
+
+      .join-form {
+        form fieldset:nth-of-type(2) {
+          .birth-day {
+            .inner {
+              flex-direction: column;
+
+              input[type='tel'],
+              select {
+                margin-right: 0;
+                width: 100%;
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+
+        form fieldset:nth-of-type(3) {
+          margin-bottom: 60px;
+
+          .form-input.checkbox label {
+            font-size: 15px;
+          }
+        }
+
+        input[type='submit'] {
+          height: 72px;
+        }
+      }
+
+      .join-sns ul {
+        padding: 0;
+        justify-content: space-around;
+
+        li a {
+          width: 48px;
+          height: 48px;
         }
       }
     }

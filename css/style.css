@@ -51,23 +51,11 @@ input:focus {
   width: 1180px;
   margin: 0 auto;
 }
-.inner .col2 {
-  width: 580px;
-}
-.inner .col2:first-child {
-  margin-right: 20px;
-}
 
 @media screen and (max-width: 1179px) {
   .inner {
     width: 100%;
     padding: 0 40px;
-  }
-  .inner .col2 {
-    width: 49%;
-  }
-  .inner .col2:first-child {
-    margin-right: 2%;
   }
 }
 @media screen and (max-width: 640px) {
@@ -1055,8 +1043,8 @@ input:focus {
   }
 }
 .join {
-  background: #f8f9f8;
-  padding: 80px 0;
+  background-color: #0da959;
+  padding: 120px 0;
   overflow: hidden;
 }
 .join .col2:first-child {
@@ -1064,98 +1052,42 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 80px;
+  background: #fff;
+  position: relative;
+  top: -50px;
+  padding: 50px 32px 60px;
   float: right;
+  border-radius: 24px;
+  margin-right: 0px;
 }
-.join .col2:first-child .join-sns {
-  width: 100%;
-  padding: 30px 0;
-  margin-bottom: 40px;
-}
-.join .col2:first-child .join-sns > h2 {
-  text-transform: capitalize;
-  text-align: center;
-  font-size: 15px;
-  line-height: 1;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-.join .col2:first-child .join-sns ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-}
-.join .col2:first-child .join-sns ul li a {
-  display: block;
-  width: 64px;
-  height: 64px;
-}
-.join .col2:first-child .join-sns ul li a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.join .col2:first-child .join-form {
+  margin-bottom: 50px;
 }
 .join .col2:first-child .join-form > h2 {
-  text-transform: capitalize;
-  text-align: center;
-  font-size: 15px;
+  font-size: 24px;
   line-height: 1;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  text-align: center;
 }
-.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-input {
-  position: relative;
-  margin: 0 auto 20px;
-}
-.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-input label {
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 14px;
-  line-height: 1;
-  position: absolute;
-  left: 8px;
-  color: #6d6b7d;
-}
-.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-input input[type=text], .join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-input input[type=tel], .join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-input input[type=password] {
-  width: 100%;
-  border: 1px solid #dde2e7;
-  border-radius: 6px;
-  padding: 14px 8px;
-}
-.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-input:focus-within label {
-  font-size: 12px;
-  line-height: 1;
-  top: 0;
-  background: #fff;
-  padding: 0 4px;
-  color: #000;
-}
-.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-input:focus-within input:focus {
-  border: 1.5px solid #000;
-}
-.join .col2:first-child .join-form .form-input.checkbox::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.join .col2:first-child .join-form .form-input.checkbox label {
-  float: left;
+.join .col2:first-child .join-form .form-div.checkbox label {
   margin-right: 20px;
   line-height: 20px;
-  position: static;
-  margin-bottom: 10px;
 }
-.join .col2:first-child .join-form .form-input.checkbox input[type=checkbox] {
-  border: 1px solid #dde2e7;
+.join .col2:first-child .join-form .form-div.checkbox label:last-child {
+  margin-right: 0;
+}
+.join .col2:first-child .join-form .form-div.checkbox input[type=checkbox] {
+  border: 1px solid black;
   width: 20px;
   height: 20px;
   border-radius: 4px;
   vertical-align: bottom;
   position: relative;
   transition: 0.2s;
+  background-color: #fff;
 }
-.join .col2:first-child .join-form .form-input.checkbox input[type=checkbox]::after {
+.join .col2:first-child .join-form .form-div.checkbox input[type=checkbox]::after {
   display: block;
   position: absolute;
   top: 4px;
@@ -1167,16 +1099,335 @@ input:focus {
   width: 9px;
   height: 5px;
 }
-.join .col2:first-child .join-form .form-input.checkbox input[type=checkbox]:checked {
+.join .col2:first-child .join-form .form-div.checkbox input[type=checkbox]:checked {
   background-color: #000;
   border-color: #000;
 }
-.join .col2:first-child .join-form .form-input.checkbox input[type=checkbox]:checked::after {
+.join .col2:first-child .join-form .form-div.checkbox input[type=checkbox]:checked::after {
   content: "";
   width: 9px;
   height: 5px;
 }
+.join .col2:first-child .join-form .label-title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div {
+  position: relative;
+  margin: 0 auto 24px;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 1;
+  position: absolute;
+  left: 8px;
+  color: #6d6b7d;
+  transition: 0.2s;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div input[type=text], .join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div input[type=tel], .join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div input[type=password] {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 14px 8px;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div input:focus {
+  border: 1.5px solid #000;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div input:focus + label {
+  font-size: 12px;
+  line-height: 1.4;
+  top: -2px;
+  background: #000;
+  padding: 2px 6px;
+  color: #fff;
+  border-radius: 2px;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div input:not(:placeholder-shown):not(:focus) {
+  border: 1.5px solid #000;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div input:not(:placeholder-shown):not(:focus) + label {
+  font-size: 12px;
+  line-height: 1.4;
+  top: 0;
+  padding: 0 4px;
+  background-color: #ffc702;
+  color: #000;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(2) {
+  margin-bottom: 40px;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(2) .checkbox {
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(2) .birth-day .inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(2) .birth-day .inner input[type=tel],
+.join .col2:first-child .join-form form fieldset:nth-of-type(2) .birth-day .inner select {
+  width: 33.3333333333%;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 14px 8px;
+  margin-right: 10px;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(2) .birth-day .inner select[name=birthDay] {
+  margin-right: 0;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(3) {
+  margin-bottom: 40px;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(3) .form-div.checkbox label {
+  float: none;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.join .col2:first-child .join-form form fieldset:nth-of-type(3) .form-div.checkbox label:last-child {
+  margin-bottom: 0;
+}
+.join .col2:first-child .join-form input[type=submit] {
+  width: 100%;
+  height: 64px;
+  border: none;
+  background-color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+.join .col2:first-child .join-sns {
+  width: 100%;
+}
+.join .col2:first-child .join-sns > h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  color: #000;
+}
+.join .col2:first-child .join-sns > h2::before, .join .col2:first-child .join-sns > h2::after {
+  content: "";
+  display: block;
+  width: 45%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000;
+}
+.join .col2:first-child .join-sns > h2::before {
+  right: 0;
+}
+.join .col2:first-child .join-sns > h2::after {
+  left: 0;
+}
+.join .col2:first-child .join-sns ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+.join .col2:first-child .join-sns ul li {
+  cursor: pointer;
+}
+.join .col2:first-child .join-sns ul li a {
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+.join .col2:first-child .join-sns ul li a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.join .col2:last-child {
+  float: left;
+  width: 640px;
+  position: relative;
+}
+.join .col2:last-child .txt p {
+  font-size: 100px;
+  line-height: 128px;
+  font-weight: 800;
+  background-color: #f24e1e;
+  border: 4px solid #000;
+  margin: 20px 0;
+  text-align: center;
+  width: 280px;
+}
+.join .col2:last-child .txt strong {
+  display: inline-block;
+  background-color: #ffc702;
+  border: 4px solid #000;
+  padding: 10px 20px;
+  margin-left: 140px;
+  font-weight: 600;
+}
+.join .col2:last-child .pic {
+  width: 100%;
+}
+.join .col2:last-child .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.join .col2:last-child .moving-img {
+  position: absolute;
+  width: 100px;
+  top: 300px;
+  right: 200px;
+  filter: drop-shadow(11px 13px 0px rgba(0, 0, 0, 0.7));
+}
 
+@media screen and (max-width: 1179px) {
+  .join {
+    padding: 80px 0;
+    overflow: hidden;
+  }
+  .join .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .join .inner .col2 {
+    width: 100%;
+  }
+  .join .col2:first-child {
+    order: 2;
+    padding: 80px;
+    float: none;
+  }
+  .join .col2:first-child .join-form {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .join .col2:first-child .join-form > h2 {
+    font-weight: 800;
+    font-size: 40px;
+  }
+  .join .col2:first-child .join-form .label-title {
+    margin-bottom: 20px;
+  }
+  .join .col2:first-child .join-form .form-input.checkbox label {
+    margin-right: 30px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .join .col2:first-child .join-form .form-input.checkbox input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    margin-right: 4px;
+  }
+  .join .col2:first-child .join-form .form-input.checkbox input[type=checkbox]::after {
+    top: 4px;
+    left: 3px;
+  }
+  .join .col2:first-child .join-form .form-input.checkbox input[type=checkbox]:checked::after {
+    width: 13px;
+    height: 6px;
+  }
+  .join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div input[type=text], .join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div input[type=tel], .join .col2:first-child .join-form form fieldset:nth-of-type(1) .form-div input[type=password] {
+    border-radius: 8px;
+    padding: 20px 16px;
+  }
+  .join .col2:first-child .join-form form fieldset:nth-of-type(2) .checkbox {
+    margin-bottom: 20px;
+  }
+  .join .col2:first-child .join-form form fieldset:nth-of-type(2) .birth-day .inner {
+    padding: 0;
+  }
+  .join .col2:first-child .join-form form fieldset:nth-of-type(2) .birth-day .inner input[type=tel],
+.join .col2:first-child .join-form form fieldset:nth-of-type(2) .birth-day .inner select {
+    margin-right: 16px;
+  }
+  .join .col2:first-child .join-form form fieldset:nth-of-type(3) {
+    margin-bottom: 60px;
+  }
+  .join .col2:first-child .join-form form fieldset:nth-of-type(3) .form-input.checkbox label {
+    font-size: 15px;
+  }
+  .join .col2:first-child .join-form input[type=submit] {
+    height: 72px;
+  }
+  .join .col2:first-child .join-sns ul {
+    padding: 0;
+    justify-content: space-around;
+  }
+  .join .col2:last-child {
+    order: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .join .col2:last-child .pic {
+    width: 80%;
+    margin: 0 auto;
+    transform: translateX(33px);
+  }
+  .join .col2:last-child .txt {
+    display: none;
+  }
+  .join .col2:last-child .moving-img {
+    width: 80px;
+    bottom: -31px;
+    right: 44px;
+    top: auto;
+    filter: drop-shadow(10px 8px 0px rgba(0, 0, 0, 0.7));
+  }
+}
+@media screen and (max-width: 640px) {
+  .join .inner {
+    padding: 0 20px;
+  }
+  .join .col2:first-child {
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+  }
+  .join .col2:first-child .join-form form fieldset:nth-of-type(2) .birth-day .inner {
+    flex-direction: column;
+  }
+  .join .col2:first-child .join-form form fieldset:nth-of-type(2) .birth-day .inner input[type=tel],
+.join .col2:first-child .join-form form fieldset:nth-of-type(2) .birth-day .inner select {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .join .col2:first-child .join-form form fieldset:nth-of-type(3) {
+    margin-bottom: 60px;
+  }
+  .join .col2:first-child .join-form form fieldset:nth-of-type(3) .form-input.checkbox label {
+    font-size: 15px;
+  }
+  .join .col2:first-child .join-form input[type=submit] {
+    height: 72px;
+  }
+  .join .col2:first-child .join-sns ul {
+    padding: 0;
+    justify-content: space-around;
+  }
+  .join .col2:first-child .join-sns ul li a {
+    width: 48px;
+    height: 48px;
+  }
+}
 #visual {
   width: 100%;
   height: 800px;
