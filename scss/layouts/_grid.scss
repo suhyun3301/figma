@@ -1,0 +1,47 @@
+$gutter: 20px;
+$colums: 12;
+$sm-colums: 4;
+$sm-margin: 16px;
+$td-margin: 40px;
+$lg-unit: 80px;
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  [class*='col-'] {
+    padding: 0 $gutter/2;
+  }
+
+  @for $i from 1 through $colums {
+    .col-lg-#{$i} {
+      width: ($lg-unit + $gutter) * $i;
+    }
+  }
+
+  @include responsive(T) {
+    width: 100%;
+    padding: 0 $td-margin;
+
+    @for $i from 1 through $colums {
+      .col-md-#{$i} {
+        width: percentage($i / $colums);
+      }
+    }
+  }
+
+  @include responsive(M) {
+    padding: 0 $sm-margin;
+
+    @for $i from 1 through $sm-colums {
+      .col-sm-#{$i} {
+        width: percentage($i / $sm-colums);
+      }
+    }
+  }
+}

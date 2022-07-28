@@ -1,14 +1,18 @@
-#footer {
+.footer {
+  background-color: $grey-bg;
+
   .inner {
-    padding: 200px 0;
+    width: 1200px;
+    padding: 200px 20px;
+    margin: 0 auto;
   }
 
   .wrap:nth-of-type(1) {
     @include clear-both;
-    border-bottom: 1px solid #000;
-    overflow: hidden;
     padding-bottom: 40px;
     margin-bottom: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #000;
 
     .footer-logo {
       float: left;
@@ -46,8 +50,8 @@
 
         .title {
           @include font(15px);
-          font-weight: 600;
           margin-bottom: 20px;
+          font-weight: 600;
           text-transform: uppercase;
         }
 
@@ -60,8 +64,8 @@
 
           a {
             @include font(15px);
-            color: #000;
             position: relative;
+            color: #000;
 
             &::after {
               @include hover-after(0);
@@ -91,10 +95,10 @@
         margin-left: 20px;
 
         a {
-          color: #000;
           display: block;
           width: 24px;
           height: 24px;
+          color: #000;
 
           i {
             @include font(18px, 24px);
@@ -107,9 +111,10 @@
 }
 
 @media screen and (max-width: $tablet) {
-  #footer {
+  .footer {
     .inner {
-      padding: 120px $padding;
+      width: 100%;
+      padding: 120px 40px;
     }
 
     .wrap:nth-of-type(1) {
@@ -136,8 +141,8 @@
 
           .title {
             @include font(15px);
-            font-weight: 600;
             margin-bottom: 20px;
+            font-weight: 600;
             text-transform: uppercase;
           }
 
@@ -164,7 +169,7 @@
 }
 
 @media screen and (max-width: $mobile) {
-  #footer {
+  .footer {
     .wrap:nth-of-type(1) {
       .footer-logo p {
         width: 70%;
@@ -172,12 +177,12 @@
 
       .footer-nav {
         .menu {
-          margin-bottom: 60px;
           width: 100%;
+          margin-bottom: 60px;
 
           &:nth-of-type(1) {
-            margin-bottom: 40px;
             padding-bottom: 40px;
+            margin-bottom: 40px;
             border-bottom: 1px solid #f4f5f6;
           }
 
@@ -198,8 +203,8 @@
         margin-top: 20px;
 
         li {
-          margin-left: 0;
           margin-right: 20px;
+          margin-left: 0;
         }
       }
     }

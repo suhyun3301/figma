@@ -1,38 +1,41 @@
-#header_sub {
+.header {
   $nav-hight: 80px;
 
-  > .inner {
+  .container {
+    width: 100%;
+  }
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     height: $nav-hight;
-    position: relative;
+    padding: 0 40px;
   }
 
   .logo {
-    float: left;
-    margin-top: 24px;
-
     a {
       display: block;
       width: 40px;
       height: 40px;
 
       img {
+        display: block;
         width: 100%;
         height: 100%;
         object-fit: contain;
-        display: block;
       }
     }
   }
 
   .menu-pc {
-    float: right;
-
     .list {
-      .item {
-        float: left;
-        line-height: $nav-hight;
-        margin-left: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
+      .item {
         a {
           @include font(18px);
           text-transform: capitalize;
@@ -40,8 +43,8 @@
 
         &:not(:last-child) {
           a {
-            color: #000;
             position: relative;
+            color: #000;
           }
 
           a::after {
@@ -50,27 +53,29 @@
         }
 
         &:last-child {
+          transform: translateY(0);
+          transition: transform 0.3s;
+
           a {
             padding: 6px 20px;
+            color: #fff;
+            background: #000;
             border: 2px solid #000;
-            background: rgb(0, 0, 0, 0);
             border-radius: 100px;
-            color: #000;
-            transition: 0.3s;
           }
         }
 
-        &:hover {
+        &:hover,
+        &.on {
           &:not(:last-child) {
             a::after {
-              width: 100%;
               left: 0;
+              width: 100%;
             }
           }
 
-          &:last-child a {
-            background: rgb(0, 0, 0, 1);
-            color: #fff;
+          &:last-child {
+            transform: translateY(-4px);
           }
         }
       }
@@ -78,40 +83,38 @@
   }
 
   .btn-call {
-    @include center-y;
+    position: relative;
+    z-index: $z-index-btn;
     display: none;
-    right: 32px;
-    position: absolute;
     width: 26px;
     height: 24px;
-    z-index: $z-index-btn;
 
     &::before,
     &::after,
     span {
-      display: block;
       position: absolute;
+      left: 0;
+      display: block;
       width: 100%;
       height: 2px;
       background-color: #000;
-      left: 0;
     }
 
     &::before {
-      content: '';
       top: 0;
+      content: '';
       transition: top 0.1s 0.1s, transform 0.1s 0.2s;
     }
 
     &::after {
-      content: '';
       bottom: 0;
+      content: '';
       transition: bottom 0.1s 0.1s, transform 0.1s 0.2s;
     }
 
     span {
-      text-indent: -9999px;
       top: calc(50% - 1px);
+      text-indent: -9999px;
       opacity: 1;
       transition: 0.25s;
     }
@@ -151,28 +154,34 @@
   }
 
   .menu-mo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-index-mo;
     display: none;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: 0.3s ease;
+
+    .list {
+      display: none;
+    }
 
     &.on {
-      display: block;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(255, 255, 255, 0.95);
-      z-index: $z-index-mo;
+      height: 100vh;
 
       .list {
+        display: block;
         padding: 80px 60px;
 
         .item {
           a {
             @include font(80px, 7.6rem);
-            font-weight: 800;
-            text-transform: uppercase;
-            color: #000;
             position: relative;
+            font-weight: 800;
+            color: #000;
+            text-transform: uppercase;
 
             &::after {
               @include hover-after(0);
@@ -189,11 +198,11 @@
       }
     }
   }
-}
 
-@media screen and (max-width: $tablet) {
-  #header_sub {
-    // padding: 0 $padding;
+  @include responsive(T) {
+    .inner {
+      padding: 0;
+    }
 
     .menu-pc {
       display: none;
@@ -202,15 +211,20 @@
     .btn-call {
       display: block;
     }
-  }
-}
 
-@media screen and (max-width: $mobile) {
-  #header_sub .menu-mo.on .list {
-    padding: $padding 0;
-    .item a {
-      font-size: 13.6vw;
-      line-height: 1.3em;
+    .menu-mo {
+      display: block;
+    }
+  }
+
+  @include responsive(M) {
+    .menu-mo.on .list {
+      padding: 40px 20px;
+
+      .item a {
+        font-size: 13.6vw;
+        line-height: 1.3em;
+      }
     }
   }
 }

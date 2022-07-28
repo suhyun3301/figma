@@ -4,11 +4,6 @@
   object-fit: cover;
 }
 
-@mixin font($fs: 20px, $lh: 1) {
-  font-size: $fs;
-  line-height: $lh;
-}
-
 @mixin clear-both {
   content: '';
   display: block;
@@ -41,14 +36,6 @@
   height: calc(1px + 0.1em);
   background: #000;
   transition: 0.2s;
-}
-
-@mixin line-clamp($line: 2) {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: $line;
-  -webkit-box-orient: vertical;
 }
 
 @mixin polygon {

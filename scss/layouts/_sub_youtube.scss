@@ -1,0 +1,280 @@
+.youtube {
+  .page-title {
+    line-height: 220px;
+  }
+
+  > p {
+    @include font(24px);
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  a {
+    color: #000;
+  }
+
+  .pic {
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+
+    img {
+      @include object-fit;
+    }
+  }
+
+  .video-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 100px;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      justify-content: space-between;
+      width: 400px;
+
+      div {
+        padding: 40px;
+        background-color: #a359ff;
+        border-radius: 40px;
+
+        h2 {
+          @include font(24px, 1.2);
+          @include line-clamp(2);
+          margin-bottom: 20px;
+          font-weight: 600;
+        }
+
+        p {
+          @include font(15px, 1.4);
+          @include line-clamp(5);
+          margin-bottom: 80px;
+        }
+      }
+
+      span {
+        @include font(24px);
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        padding: 20px 40px;
+        font-weight: 600;
+        background-color: $green;
+        border-radius: 40px;
+      }
+    }
+
+    .pic {
+      position: relative;
+      border-radius: 40px;
+
+      i {
+        position: absolute;
+        @include center;
+        @include font(50px);
+        color: #ff2b87;
+      }
+
+      &::before {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .config {
+    display: flex;
+    padding: 80px 0 100px;
+    margin-bottom: 100px;
+    color: #fff;
+    background-color: #000;
+
+    .title {
+      margin-bottom: 40px;
+      text-align: center;
+      filter: invert(1);
+    }
+
+    .row {
+      justify-content: center;
+    }
+
+    .video-second {
+      display: block;
+      padding: 0 20px;
+      margin-bottom: 80px;
+
+      .pic {
+        margin-bottom: 20px;
+        border-radius: 12px;
+      }
+
+      .text {
+        width: 90%;
+        color: #fff;
+
+        h2 {
+          @include line-clamp(2);
+          @include font(20px, 1.4);
+          margin-bottom: 16px;
+          font-weight: 600;
+        }
+
+        p {
+          @include line-clamp(3);
+          @include font(18px, 1.4);
+          margin-bottom: 20px;
+          opacity: 0.5;
+        }
+
+        span {
+          @include font(14px);
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+
+  .video-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 100px;
+
+    > div {
+      margin-bottom: 40px;
+    }
+
+    &-item {
+      .pic {
+        margin-bottom: 20px;
+        border-radius: 12px;
+      }
+
+      .text {
+        padding-right: 20px;
+
+        h2 {
+          @include line-clamp(1);
+          @include font(18px);
+          margin-bottom: 8px;
+          font-weight: 600;
+        }
+
+        p {
+          @include line-clamp(3);
+          @include font(15px, 1.4);
+          margin-bottom: 24px;
+        }
+
+        span {
+          @include font(12px);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    .page-title {
+      font-size: 13vw;
+      line-height: 220px;
+    }
+
+    .video-main {
+      .text {
+        width: 200px;
+      }
+    }
+
+    .config {
+      padding-bottom: 30px;
+    }
+  }
+
+  @include responsive(M) {
+    .page-title {
+      font-size: 13vw;
+      line-height: 120px;
+    }
+
+    > P {
+      @include font(3.5vw, 1.4);
+      margin-bottom: 60px;
+    }
+
+    .video-main {
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+
+      .text {
+        order: 2;
+        width: 100%;
+
+        div {
+          p {
+            @include line-clamp(2);
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .pic {
+        order: 1;
+      }
+    }
+
+    .config {
+      padding-bottom: 0;
+
+      .title video {
+        width: 90%;
+      }
+    }
+  }
+}
+
+.pop-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 5vw;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  iframe {
+    order: 2;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .close {
+    display: inline-block;
+    order: 1;
+    padding: 8px 12px;
+    margin-bottom: 20px;
+    font-size: 1.6vw;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 8px;
+  }
+
+  @include responsive(M) {
+    .close {
+      font-size: 3vw;
+    }
+  }
+}

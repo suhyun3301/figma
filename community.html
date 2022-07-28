@@ -13,15 +13,34 @@
     <script src="js/main.js" defer></script>
   </head>
   <body>
-    <header id="header">
-      <div class="inner">
-        <h1 class="logo">
-          <a href="index.html">
-            <img src="img/logo.svg" alt="figma logo" />
-          </a>
-        </h1>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="inner">
+            <h1 class="logo">
+              <a href="index.html">
+                <img src="img/logo.svg" alt="figma logo" />
+              </a>
+            </h1>
 
-        <nav class="menu-pc">
+            <nav class="menu-pc col-lg-7">
+              <ul class="list">
+                <li class="item"><a href="careers.html">careers</a></li>
+                <li class="item"><a href="youtube.html">youtube</a></li>
+                <li class="item"><a href="community.html">community</a></li>
+                <li class="item"><a href="gallery.html">gallery</a></li>
+                <li class="item"><a href="contact.html">contact</a></li>
+                <li class="item"><a href="join.html">join</a></li>
+              </ul>
+            </nav>
+
+            <a href="#" class="btn-call">
+              <span>메뉴호출</span>
+            </a>
+          </div>
+        </div>
+
+        <nav class="menu-mo">
           <ul class="list">
             <li class="item"><a href="careers.html">careers</a></li>
             <li class="item"><a href="youtube.html">youtube</a></li>
@@ -31,24 +50,7 @@
             <li class="item"><a href="join.html">join</a></li>
           </ul>
         </nav>
-
-        <a href="#" class="btn-call">
-          <span>메뉴호출</span>
-        </a>
       </div>
-
-      <nav class="menu-mo">
-        <div class="inner">
-          <ul class="list">
-            <li class="item"><a href="careers.html">careers</a></li>
-            <li class="item"><a href="youtube.html">youtube</a></li>
-            <li class="item"><a href="community.html">community</a></li>
-            <li class="item"><a href="gallery.html">gallery</a></li>
-            <li class="item"><a href="contact.html">contact</a></li>
-            <li class="item"><a href="join.html">join</a></li>
-          </ul>
-        </div>
-      </nav>
     </header>
 
     <section class="content community">
@@ -428,7 +430,7 @@
       </div>
     </section>
 
-    <footer id="footer">
+    <footer class="footer">
       <div class="inner">
         <div class="wrap">
           <div class="footer-logo">

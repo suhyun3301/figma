@@ -26,40 +26,40 @@
       &:hover,
       &.on {
         a {
+          color: #fff;
           background: #000;
           border-radius: 20px;
-          color: #fff;
         }
       }
 
       a {
         display: block;
         @include font(20px);
-        color: #000;
-        padding: 0 6px;
         min-width: 32px;
+        padding: 0 6px;
         line-height: 32px;
+        color: #000;
       }
 
       &.prev,
       &.next {
         &:hover a {
-          background: none;
-          opacity: 1;
           color: #000;
+          background: none;
           border-radius: 0;
+          opacity: 1;
         }
 
         a {
+          padding: 0;
           font-size: 40px;
           opacity: 0.1;
-          padding: 0;
         }
       }
 
       &.prev {
-        transform: rotate(180deg);
         margin-right: 10px;
+        transform: rotate(180deg);
       }
     }
   }
