@@ -1,0 +1,145 @@
+{
+  "tips": [
+    {
+      "title": "The UX writer's guide to Figma",
+      "author": "Ryan Reid",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/6008ec90218bff4a41ddceb2f7d304f88065155f-800x800.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "UX Writer at Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/25f8bc3f7a6d812074ab7322f42fc81dbc0fe133-4240x2000.jpg?w=661&q=75&fit=max&auto=format&dpr=1",
+      "desc": "Hello, hello! Whether you found your way here by accident or brilliant SEO, I’m glad you’re here. Over the past few months, my team and I have spent time gathering feedback from UX writers and content designers from around the industry. Between feature requests and copy recommendations, one theme kept bubbling up: Figma is pretty intimidating for writers. If you can relate, don’t worry—you’re in good company. Many of us, including the writers here at Figma, come from fields beyond design, and never learned to use design tools. With so many bells and whistles, where do you even start?"
+    },
+    {
+      "title": "The UX writer's guide to Figma",
+      "author": "Ana Boyer",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/6eef66db9f1573dbcc1983fb27a055604df1be2e-498x498.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Designer Advocate at Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/a662383eacb65b5570113d9933a2947823a66c3d-4800x2512.png?w=661&q=75&fit=max&auto=format&dpr=1",
+      "desc": "Collaboration—it’s hard to define, but easy to feel. When the right people get together with the tools they need, conversations flow more easily, ideas grow faster, and work just seems to work. We built FigJam, our online whiteboard, to help teams collaborate and work better together across projects, disciplines, and geographies. In this guide, I’ll walk you through best practices and share strategies for collaborating in FigJam throughout the entire design process—from your first brainstorm to your final review."
+    },
+    {
+      "title": "The UX writer's guide to Figma",
+      "author": "Chad Bergman",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/2eb34f5b7e52a346c312911336726e861203bd65-600x600.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Designer Advocate at Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/ec881cb992a1231d777aaf8983da643cd59d25d9-1734x908.png?w=661&q=75&fit=max&auto=format&dpr=1",
+      "desc": "As designers, we need open, collaborative workspaces that give us the freedom to explore and iterate without disturbing existing work. Now, with branching in Figma, you can have both. Branches are exploratory spaces that enable designers to safely try new ideas without making changes to the main, or existing, file. Rather than auto-saving to the main file, changes from branches are merged into the main file when you're ready. This guide will cover some helpful tips, and highlight considerations for when branching may (or may not!) be appropriate in your individual or team workflow."
+    },
+    {
+      "title": "Creating and organizing Variants",
+      "author": "Anthony DiSpezio",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/83c9284b5fca37f072d9a3e4400a237de4d71252-242x242.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Designer Advocate at Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/332058a92937ce3eb789601c1dc0ff978ed10a9e-4800x2512.jpg?w=661&q=75&fit=max&auto=format&dpr=1",
+      "desc": "Variants bring a range of new possibilities to components and scalable design systems. At first glance, creating and organizing variants might seem like more work. While there is some effort for the designer creating the component set with variants, the end result for anyone using the component is a simpler and more delightful experience."
+    },
+    {
+      "title": "Team, project, and file organization",
+      "author": "Luis Ouriach",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/84c189149af8a5518c0ef2afd0c61f9f568c926a-500x500.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Designer Advocate at Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/ae34b2371fcc12ca30c4f16cfc214a6207583e07-4800x2512.png?w=661&q=75&fit=max&auto=format&dpr=1",
+      "desc": "Organization is hard. As product teams scale and naturally land on cross functional ‘squad’ models of working—with contributors from across the business—the way we structure and present our work can make or break our ability to align as a team towards broader goals, stay on the same page, and even know where to find the latest version of a design—registration-flow-v1-final10.jpg, anyone? Being efficient within our design software can trim down the hours we spend digging around and ensure that we can confidently make the design-to-development handshake as smooth as we’d like."
+    },
+    {
+      "title": "Best practices: components, styles, and shared libraries",
+      "author": "Thomas Lowry",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/8e5d8fe1d2473a140601b8274a63ad67b3a075be-400x400.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Designer Advocate at Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/2b8d681ad3998552edccc48e011ff89532aabc28-2400x1256.png?w=661&q=75&fit=max&auto=format&dpr=1",
+      "desc": "Two of Figma's most powerful features are components and styles. They let you reuse UI objects and attributes so you can maintain designs systematically at scale. When you need to change something, like your brand’s link color or home icon, you can make the change once — in the original main component or style — and watch it update across all your designs.."
+    }
+  ],
+
+  "blog": [
+    {
+      "title": "What’s new in Figma: June 2022",
+      "author": "Andrew Forbes",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/dc02d84d8fad6c59e36ed4d49ba597d23789dd87-400x400.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Marketing at Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/afaa64f870202a5335047d9c5d827c1036ba9aad-4240x2000.png?w=1060&q=75&fit=max&auto=format&dpr=2",
+      "desc": "This month, we’re focused on extensibility—from new ways to power up your design workflows, to a partnership with Google Chromebooks that brings Figma and FigJam to high school students. Designers, developers, and now more students will be able to design, build, and learn however works best for them. Read on to learn more.",
+      "date": "June 28, 2022"
+    },
+    {
+      "title": "Inside Figma: a case study on strict null checks",
+      "author": "Rudi Chen",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/5fb7cf11990425879902bbbc7527eed8abd71e38-400x400.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Software Engineer, Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/93adc46a0c312b7e8930970aa0d44dbc7656e1c0-4240x2000.png?w=1060&q=75&fit=max&auto=format&dpr=2",
+      "desc": "At Figma, we believe in continuously investing in product quality and developer productivity by looking at recurring types of bugs and addressing them in a systematic way. A few months ago, our engineering team completed a large effort that achieves both: turning on the strictNullChecks compiler flag for our front-end TypeScript codebase.",
+      "date": "December 17, 2020"
+    },
+    {
+      "title": "Full-scale expression with Grilli Type",
+      "author": "Ted Brown",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/956e7977e70c019eda167959561742019b5997ed-1444x1444.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Managing Editor at Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/0c6fe945bdbfc31880d0fcc8cd663534f605c254-4240x2009.png?w=1060&q=75&fit=max&auto=format&dpr=2",
+      "desc": "Type can suffer from scaling problems: When you increase the size of a font, say, from a business card to a billboard (or even from a mobile device to a desktop), you’re also changing the spatial perception between each letter. Lines of copy that you might easily read in a given form factor will start to deform and become illegible in another. Balancing size and legibility often requires minute, exacting adjustments to the kerning (the spacing between individual letters) and tracking (the spacing between groups of letters), so that typography looks consistent and readable.",
+      "date": "May 27, 2022"
+    },
+    {
+      "title": "Inside Figma: tips from the team that builds Figma",
+      "author": "Rachel Miller",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/62ed2470f610b2b3e7fee4a6fab017b273d5c339-800x800.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Editor, Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/3ab210dbf9a828a500f0ea0dd8b6171c87b44a4b-4240x2000.png?w=1060&q=75&fit=max&auto=format&dpr=2",
+      "desc": "A few weeks back, we asked ten Figmates across engineering, product, design, and research to share what they love most about Figma, including their favorite use cases and tricks. During a recent livestream, they walked through speed tips and keyboard shortcuts, brainstorming exercises, and their most-used templates — all in five minutes or less. You can check out the full video below, or read on for curated tips on the unexpected ways we use Figma:",
+      "date": "March 3, 2021"
+    },
+    {
+      "title": "Inside Figma: getting out of the (secure) shell",
+      "author": "Hongyi Hu",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/1c4f6cdbe1e97ba2a56ecfce39521c7c9a76b7a7-500x500.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Security Engineer at Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/2f137d8299e36bac36f71d9355da5bfee004ec2b-2120x1000.png?w=1060&q=75&fit=max&auto=format&dpr=2",
+      "desc": "Figma’s vision is to make design accessible to all, and while today more than two-thirds of our community identifies as something other than “designer,” we know making design truly accessible means more than simply opening it up to more people. It also means building products that make it possible for anyone—regardless of age, ability, or background—to participate in the design process from end to end.",
+      "date": "May 19, 2022"
+    },
+    {
+      "title": "Plugins are coming to Figma",
+      "author": "Jonas Sicking",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/c68dfb27fae444580db467bc0b2c377ba20bcd71-1024x1024.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Figma Software Engineer",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/d115570e5b76580ec1ed82b94662cfb6ff6077bf-4240x2000.png?w=1060&q=75&fit=max&auto=format&dpr=2",
+      "desc": "In many ways, being a Designer Advocate for Education is a dream role for me. While I’ve pivoted back and forth from product design and education throughout my career, I was most recently an Assistant Professor at the Rochester Institute of Technology, where I taught interaction design classes. As an educator, I saw firsthand how students can learn valuable design skills in Figma and wanted to help others adopt the platform that was so inspiring to me. In fact, last year when Figma expanded Figma for Education, I was still teaching at RIT. I partnered with the team here to publish teaching materials, based on class activities and lessons I would give to students.",
+      "date": "August 26, 2021"
+    },
+    {
+      "title": "How to run a design sprint",
+      "author": "Andrea Helmbolt",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/d1f4f2b1e4ea980887184bc20addbee9ca163df5-399x399.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Web Producer, Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/b9db5296851a03c96b1d77339bfa1d7c05994e06-2120x1000.png?w=1060&q=75&fit=max&auto=format&dpr=2",
+      "desc": "The design sprint is one of the most relied upon yet formidable processes a designer goes through. Teams use design sprints for many different reasons like at the start of a new project, when time is on the line, to get a product or team unstuck, or to leverage new data or research. Some teams use design sprints as shortcuts to tackle big problems quickly, while other teams see design sprints as the most effective way to complete any project. The design sprint idea and methodology uses simple prototyping, user research, and user testing to solve complex problems. Since its inception, teams around the world have adopted, amended, expanded, and molded the original design sprint concept to meet their own needs.",
+      "date": "August 5, 2019"
+    },
+    {
+      "title": "Automate work. Bring in real data. Extend what’s possible with Figma Plugins. ",
+      "author": "Sho Kuwamoto",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/9ea120a49d2781c0fe85508c249e1e2a9e6a471b-200x200.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Director of Product, Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/72a3000fe2d39a5a7647f467b94e740ad0af687d-4240x2000.png?w=1060&q=75&fit=max&auto=format&dpr=2",
+      "desc": "I’m excited to introduce plugins to the entire Figma community, alongside hundreds of creators who’ve built and published plugins during our beta. Today, the gates are open for anyone to use these plugins built by our community and build your own plugins tailored to your workflow.",
+      "date": "August 1, 2019"
+    },
+    {
+      "title": "Meet us in the browser",
+      "author": "Dylan Field",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/672d9533efa16607fd9f84281a4d158c6a9fd048-400x400.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Co-founder & CEO, Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/fbcfe0abb23fa92f3f663de4e33457adf86d1e3a-4240x2000.png?w=1060&q=75&fit=max&auto=format&dpr=2",
+      "desc": "When my co-founder Evan and I launched Figma in closed beta five years ago, we bet everything on the browser. Like many others that used Google Docs at school and then returned home to virtual worlds, we intuitively understood that Internet native software embodies values like collaboration, transparency and access. Pretty much everyone around us — friends, classmates, coworkers we had interned with — shared these values, so we assumed they were self-evident.",
+      "date": "December 9, 2020"
+    },
+    {
+      "title": "Coming together at Config 2021",
+      "author": "Dylan Field",
+      "authorImg": "https://cdn.sanity.io/images/599r6htc/localized/672d9533efa16607fd9f84281a4d158c6a9fd048-400x400.jpg?w=36&q=75&fit=max&auto=format&dpr=2",
+      "position": "Co-founder & CEO, Figma",
+      "pic": "https://cdn.sanity.io/images/599r6htc/localized/2ba81136eef1ae6de19452e1afb2d98ec5f5874a-2120x1000.png?w=1060&q=75&fit=max&auto=format&dpr=2",
+      "desc": "Nothing great is made alone. Our teams, collaborators, and thought partners are instrumental in shaping a good idea into a great one. This year, more than ever, we’ve learned that the best ideas come from tapping into the power of varied experiences and diverse perspectives.",
+      "date": "April 21, 2021"
+    }
+  ]
+}

@@ -11,11 +11,18 @@
 
   a {
     color: #000;
+
+    &:hover {
+      .pic {
+        transform: translateY(-15px);
+      }
+    }
   }
 
   .pic {
     overflow: hidden;
     aspect-ratio: 16 / 9;
+    transition: 0.3s;
 
     img {
       @include object-fit;
