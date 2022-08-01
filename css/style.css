@@ -1630,6 +1630,182 @@ input:focus {
   cursor: pointer;
 }
 
+.careers .title {
+  padding: 100px 0;
+  background-color: #c7b9ff;
+}
+.careers .title .page-title {
+  margin-bottom: 40px;
+  line-height: 120px;
+  text-align: left;
+}
+
+.contact .wrap {
+  position: relative;
+}
+.contact .wrap::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-image: url(../../img/bg_contact.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  content: "";
+}
+.contact .container {
+  position: relative;
+}
+.contact .container .page-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 60px;
+  line-height: 220px;
+}
+.contact .container .page-title::after {
+  display: block;
+  width: 20%;
+  height: 88px;
+  margin-left: 20px;
+  background: url(../../img/marker.png) no-repeat;
+  background-size: contain;
+  content: "";
+}
+.contact #map {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 5px solid #000;
+  margin-bottom: 100px;
+}
+.contact .location-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.contact .location-info .location-list li {
+  margin-bottom: 28px;
+}
+.contact .location-info .location-list li a {
+  font-size: 32px;
+  line-height: 1;
+  position: relative;
+  font-weight: 700;
+  color: #000;
+  opacity: 0.3;
+}
+.contact .location-info .location-list li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -0.2em;
+  left: 0;
+  width: 0;
+  height: calc(1px + 0.1em);
+  background: #000;
+  transition: 0.2s;
+}
+.contact .location-info .location-list li.on a {
+  opacity: 1;
+}
+.contact .location-info .location-list li.on a::after {
+  width: 100%;
+}
+.contact .location-info .location-list li:hover a::after {
+  width: 100%;
+}
+.contact .location-info .info-list .info-item {
+  display: none;
+}
+.contact .location-info .info-list .info-item dt {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.contact .location-info .info-list .info-item .adress-box {
+  margin-right: 120px;
+}
+.contact .location-info .info-list .info-item .adress-box .address {
+  font-size: 38px;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 700;
+}
+.contact .location-info .info-list .info-item .number {
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 56px;
+  font-weight: 600;
+}
+.contact .location-info .info-list .info-item.on {
+  display: flex;
+}
+@media screen and (max-width: 1199px) {
+  .contact #map {
+    margin-bottom: 60px;
+  }
+  .contact .location-info .location-list li a {
+    font-size: 28px;
+  }
+  .contact .location-info .info-list {
+    margin-right: 40px;
+  }
+  .contact .location-info .info-list .info-item {
+    flex-direction: column;
+  }
+  .contact .location-info .info-list .info-item .adress-box {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .contact .location-info .info-list .info-item .adress-box .address {
+    font-size: 26px;
+  }
+  .contact .location-info .info-list .info-item .number {
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contact .wrap::before {
+    height: 84vw;
+    background-size: cover;
+  }
+  .contact .container .page-title {
+    justify-content: center;
+    padding-top: 0;
+    line-height: 160px;
+  }
+  .contact .container .page-title::after {
+    width: 13%;
+  }
+  .contact #map {
+    aspect-ratio: 4/3;
+  }
+  .contact .location-info {
+    flex-direction: column;
+  }
+  .contact .location-info .location-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .contact .location-info .location-list li a {
+    font-size: 5.8vw;
+  }
+  .contact .location-info .info-list {
+    margin-right: 0;
+  }
+  .contact .location-info .info-list .info-item .adress-box {
+    margin-bottom: 20px;
+  }
+  .contact .location-info .info-list .info-item .number {
+    margin-bottom: 20px;
+  }
+}
+
 .main.visual {
   width: 100%;
   height: 800px;
